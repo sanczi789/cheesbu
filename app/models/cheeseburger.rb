@@ -1,0 +1,2 @@
+class Cheeseburger < ApplicationRecord
+end

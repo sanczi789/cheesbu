@@ -1,0 +1,13 @@
+.container
+  %h2 International Cheeseburger Quality Survey
+
+  = bootstrap_form_for(@cheeseburger) do |f|
+    = f.date_field :date
+    = f.text_field :country
+    = f.text_field :additional_comment
+    = f.submit "Create"
+
+  - @cheeseburgers.each do |cheeseburger|
+    = cheeseburger.date
+    = cheeseburger.country
+    = cheeseburger.additional_comment
