@@ -1,6 +1,6 @@
 class CheeseburgersController < ApplicationController
   def index
-    @cheeseburgers = Cheeseburger.all
+    @cheeseburgers = Cheeseburger.all.order(date: :desc)
     @cheeseburger = Cheeseburger.new
   end
 
